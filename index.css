@@ -1,0 +1,53 @@
+body {
+    text-align: center;
+    color: white;
+    font-size: xx-large;
+    font-family: serif;
+    font-weight: bold;
+    background-image: url("table.jpg");
+}
+
+h1 {
+    color: goldenrod;
+    margin: 10px auto;
+}
+
+.message {
+    font-style: italic;
+    padding: 10px;
+}
+
+button {
+    background-color: goldenrod;
+    color: green;
+    text-align: center;
+    width: 130px;
+    height:35;
+    font-weight: bold;
+    border: 0;
+    border-radius: 2px;
+    display: block;
+    margin: 2px auto; 
+}
+
+.message, p {
+    padding: 2px;
+    margin: 2px;
+}
+
+button:disabled {
+    background-color: silver;
+    color: darkslategray;
+}
+
+.player {
+    margin: 30px auto;
+}
+
+.box {
+    height: 80px;
+}
+
+.gameform:hidden .play:hidden {
+    display: none;
+}

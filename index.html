@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>        
+        <title>Blackjack</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div id="gameform">
+            <div class="box">
+                <h1>Blackjack</h1>
+            </div>
+            <form action="javascript:submit();" method="POST">
+                <div class="box">
+                <label for="name">Name: </label> <br>
+                <input type="text" placeholder="Enter your name . . ."  id='name' value="fname" required>
+                </div>
+                <div class="box"></div>
+                <div class="box">
+                <label for="chips">How many chips? </label> <br>
+                <input id="chips" type="number" min="1" max="10" value="3" required>
+                </div>
+                <div class="box"></div>
+                <div class="box">
+                <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+        <div id="play">
+            <div class="box">
+            <h1>Blackjack</h1>
+            </div>
+            <div class="box">
+            <p id="dealer-cards"></p>
+            <p id="dealer-sum"></p>
+            </div>
+            <div class="box">
+            <div class="message" id="message-el">Want to play?</div>
+            </div>
+            <div class="box">
+            <p id="cards-el"></p>
+            <p id="sum-el"></p>
+            </div>
+            <div class="box">
+            <button id="start-btn" onclick="startGame()">START GAME</button>
+            <button id="newcard-btn" onclick="newCard()">NEW CARD</button>
+            <button id="stick-btn" onclick="stick()">STICK</button>
+            </div>
+            <div class="box">
+            <p id="player-el" class="player"></p>
+            </div>
+            <script src="index.js"></script>
+        </div>
+    </body>
+</html>
